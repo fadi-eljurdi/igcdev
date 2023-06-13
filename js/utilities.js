@@ -13,7 +13,7 @@ function env(path) {
 }
 function getPage(path) {
     var origin = new URL(location.href).origin
-    if (origin.includes('fadi-eljurdi.github.io')) origin += '/igc'
+    if (origin.includes('fadi-eljurdi.github.io')) origin += '/igcdev'
     return new Promise((resolve, reject) => {
         // console.log(origin);
         fetch(`${origin}/${path}`).then(res => res.text()).then(res => {
