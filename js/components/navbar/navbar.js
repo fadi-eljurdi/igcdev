@@ -10,10 +10,16 @@ export default {
         }
     },
     mounted() {
-        if (location.href.includes('/property') || location.href.includes('/properties') || location.href.includes('/privacy-policy') || location.href.includes('/terms')) {
+        if (location.href.includes('/blogs') || location.href.includes('/privacy-policy') || location.href.includes('/terms')) {
             document.querySelector('header').classList.add('bg-dark')
         }
 
+        document.addEventListener('scroll',e => {
+            // console.log(window.scrollY);
+            if(window.scrollY >= 10) {
+                document.querySelector('header').classList.add('bg-dark')
+            }else document.querySelector('header').classList.remove('bg-dark')
+        })
 
     }
 }

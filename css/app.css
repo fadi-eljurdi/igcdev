@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Poppins&display=swap');
 
 :root {
     --neon-purple: #FC00FF;
@@ -26,6 +26,10 @@ body {
     /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
 
+}
+
+.bungee{
+    font-family: 'Bungee', cursive;
 }
 
 footer {
@@ -223,6 +227,7 @@ nav>a:hover {
     filter: drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 25px var(--bs-info))
 }
 
+
 .fs-small {
     font-size: small;
 }
@@ -246,4 +251,10 @@ nav>a:hover {
 
 .img-zoom {
     transition: .3s ease-in-out !important;
+}
+
+/* .class="swiper-pagination-bullet swiper-pagination-bullet-active" */
+
+.swiper-pagination-bullet{
+    background-color: var(--bs-info) !important;
 }
