@@ -1,4 +1,5 @@
 import utilities from "../../utilities.js"
+import store from '../../store.js'
 export default {
     template: await utilities.getPage('./js/components/blogs-section/blogs-section.html'),
     data(){
@@ -30,7 +31,8 @@ export default {
                     spaceBetween: 20,
                   },
                 }
-            }
+            },
+            store
         }
     }
     

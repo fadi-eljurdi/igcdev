@@ -15,29 +15,8 @@
         </div> -->
         <div class="col-12">
             <swiper-container :init="blogsSwiper" id="blogsSwiper">
-                <div class="swiper-slide">
-                    <a href="/blogs/template.html"><blog></blog></a> 
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
-                </div>
-                <div class="swiper-slide">
-                    <blog></blog>
+                <div class="swiper-slide" v-for="b in store.profile.blogs" :key="b">
+                    <blog :blog="b"></blog>
                 </div>
             </swiper-container>
         </div>

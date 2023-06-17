@@ -10,7 +10,7 @@ export default {
         }
     },
     mounted() {
-        if (location.href.includes('/blogs') || location.href.includes('/privacy-policy') || location.href.includes('/terms')) {
+        if (location.href.includes('/blogs') || location.href.includes('/team')|| location.href.includes('/privacy-policy') || location.href.includes('/terms')) {
             document.querySelector('header').classList.add('bg-dark')
         }
 

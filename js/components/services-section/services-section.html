@@ -34,32 +34,16 @@
         <div class="col-12 col-lg-4">
             <pot data-aos="flip-right" data-aos-duration="1000" title="Content and Gaming IP Delivery and Incubation Services" src="https://image.lexica.art/md2/9cb6b480-8a81-4250-8c1b-9578a772ed24">At IncuGameCon, we excel in project management for both general content and gaming development. We handle IP incubation and asset management, ensuring efficient documentation and protection. Our personalized services, trilingual consultants, and extensive network make us the top choice in the MENAT region.</pot>
         </div> -->
-        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1000">
-            <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
-                <div class="ratio ratio-16x9">
-                    <img src="https://image.lexica.art/md2/4eb8ae8d-b803-44aa-8097-155bdab93b9d" alt="s1" class="img-fluid object-fit-cover rounded">
+        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
+            <a :href="s.url" class="no-decoration">
+                <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
+                    <div class="ratio ratio-16x9">
+                        <img :src="s.thumbnail" alt="s1" class="img-fluid object-fit-cover rounded">
+                    </div>
+                    <h4 class="fs-4 text-info m-0">{{s.title}}</h4>
+                    <p class="text-light fs-smaller text-fade-3">{{s.description}}</p>
                 </div>
-                <h4 class="fs-4 text-info m-0">General Content Development Consultancy and Management Services</h4>
-                <p class="text-light fs-smaller text-fade-3">We specialize in incubating media projects, offering content development consultancy and management services. We handle writers and talent, manage budgets, and ensure client satisfaction, enabling them to market ideas effectively and streamline development.</p>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1500">
-            <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
-                <div class="ratio ratio-16x9">
-                    <img src="https://image.lexica.art/md2/4eb8ae8d-b803-44aa-8097-155bdab93b9d" alt="s1" class="img-fluid object-fit-cover rounded">
-                </div>
-                <h4 class="fs-4 text-info m-0">General Content Development Consultancy and Management Services</h4>
-                <p class="text-light fs-smaller text-fade-3">We specialize in incubating media projects, offering content development consultancy and management services. We handle writers and talent, manage budgets, and ensure client satisfaction, enabling them to market ideas effectively and streamline development.</p>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
-            <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
-                <div class="ratio ratio-16x9">
-                    <img src="https://image.lexica.art/md2/4eb8ae8d-b803-44aa-8097-155bdab93b9d" alt="s1" class="img-fluid object-fit-cover rounded">
-                </div>
-                <h4 class="fs-4 text-info m-0">General Content Development Consultancy and Management Services</h4>
-                <p class="text-light fs-smaller text-fade-3">We specialize in incubating media projects, offering content development consultancy and management services. We handle writers and talent, manage budgets, and ensure client satisfaction, enabling them to market ideas effectively and streamline development.</p>
-            </div>
+            </a>
         </div>
     </div>
 </section>

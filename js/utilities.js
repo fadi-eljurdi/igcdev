@@ -41,9 +41,39 @@ function addCommas(number) {
     return parts.join('.');
 }
 
+
+function timo(date) {
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+    dayjs();
+    const futureDate = dayjs(date);
+    // console.log(futureDate.fromNow());
+    return futureDate.fromNow()
+}
+
+function fixClosingTags(htmlString) {
+    const regex = /<\/\s*(\w+)\s*>/g;
+    return htmlString.replace(regex, "</$1>");
+}
+
+function shareBlog(title, url) {
+    if (navigator.share) {
+        navigator.share({
+            title: title,
+            url: url
+        })
+            .then(() => console.log('Shared successfully'))
+            .catch((error) => console.error('Error sharing:', error));
+    } else {
+        console.log('Web Share API not supported');
+    }
+}
+
 export default {
     getPage,
     getDistinctValues,
     addCommas,
-    env
+    env,
+    timo,
+    fixClosingTags,
+    shareBlog
 }
