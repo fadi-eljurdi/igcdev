@@ -34,7 +34,7 @@
         <div class="col-12 col-lg-4">
             <pot data-aos="flip-right" data-aos-duration="1000" title="Content and Gaming IP Delivery and Incubation Services" src="https://image.lexica.art/md2/9cb6b480-8a81-4250-8c1b-9578a772ed24">At IncuGameCon, we excel in project management for both general content and gaming development. We handle IP incubation and asset management, ensuring efficient documentation and protection. Our personalized services, trilingual consultants, and extensive network make us the top choice in the MENAT region.</pot>
         </div> -->
-        <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
+        <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
             <a :href="s.url" class="no-decoration" :title="s.title">
                 <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
                     <div class="ratio ratio-16x9">
