@@ -17,8 +17,8 @@ export default {
         document.addEventListener('scroll',e => {
             // console.log(window.scrollY);
             if(window.scrollY >= 10) {
-                document.querySelector('header').classList.add('bg-dark')
-            }else document.querySelector('header').classList.remove('bg-dark')
+                document.querySelector('header').classList.add('bg-aswad')
+            }else document.querySelector('header').classList.remove('bg-aswad')
         })
 
     }

@@ -4,6 +4,14 @@
     --neon-purple: #FC00FF;
 }
 
+.bg-aswad{
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
 body {
     overflow-x: hidden !important;
     /* background-color: #231942 !important; */
@@ -36,6 +44,8 @@ body {
 }
 
 #original > h1{
+    
+    font-family: 'Bungee', cursive;
     color: var(--bs-info);
 }
 #original > p{
@@ -71,9 +81,15 @@ footer {
     /* text-shadow: 0 0 5px var(--bs-info), 0 0 10px var(--bs-info), 0 0 15px var(--bs-info), 0 0 20px var(--bs-info); */
     /* Apply the neon effect */
     filter:
-        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 25px var(--bs-info))
+        drop-shadow(0 0 10px var(--bs-info)) 
 }
 
+.bg-neon{
+
+
+    filter:
+        drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 20px var(--bs-info))
+}
 .neon-lg {
     filter:
         drop-shadow(0 0 5px var(--bs-info)) drop-shadow(0 0 200px var(--bs-info))

@@ -1,9 +1,10 @@
 <section class="d-flex flex-column position-relative z-1 ">
     <div class="ratio ratio-3x4 overflow-hidden neon-hover rounded">
-        <img :src="src" alt="service" class=" img-zoom img-fluid object-fit-cover rounded img-brightness rounded">
+        <img :src="data.thumbnail" alt="service" class=" img-zoom img-fluid object-fit-cover rounded img-brightness rounded">
     </div>
-    <div class="pot-info px-3 rounded">
-        <h5 class="text-light text-fade fs-5 pop border-start border-5 ps-2 border-info">{{title}}</h5>
-        <p class="bg-glass rounded p-2 text-light font-monospace"><slot></slot></p>
+    <div class="pot-info p-3 rounded">
+        <h5 class="text-light text-fade fs-5 pop border-start border-5 ps-2 border-info">{{data.title}}</h5>
+        <p class="bg-glass rounded p-1 text-light font-monospace text-fade-2">{{data.description}}</p>
+        <a :href="data.url" class="btn btn-outline-info btn-sm w-100">Explore</a>
     </div>
 </section>

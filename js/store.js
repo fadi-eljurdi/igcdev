@@ -45,6 +45,17 @@ export default {
                 "thumbnail": "",
                 "url": ""
             },
+        ],
+        "projects": [
+            {
+                "index": "",
+                "date": "",
+                "id": "",
+                "title": "",
+                "description": "",
+                "thumbnail": "",
+                "url": ""
+            },
         ]
     }
 }
