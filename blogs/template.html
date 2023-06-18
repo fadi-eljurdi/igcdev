@@ -57,7 +57,7 @@
         <section class="container">
             <div class="row g-4">
                 <div class="col-12 col-lg-8">
-                    <article class="shadow-sm bg-glass rounded">
+                    <article class="shadow-sm bg-dark p-3 rounded">
                         <blog-media :media='##blog_media'></blog-media>
                         <section v-show="!translated" id="original">
                             <h1>##blog_page_header</h1>
@@ -67,15 +67,15 @@
                         <hr class="text-neon">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="d-flex align-items-center fs-small pop text-light">
-                                <time>{{utilities.timo('##blog_date')}}</time>
+                                <time class="text-warning">{{utilities.timo('##blog_date')}}</time>
                                 <i class="bi bi-dot"></i>
-                                <span v-show="!translated" class="point text-decoration-underline"
+                                <span v-show="!translated" class="point text-decoration-underline text-secondary"
                                     @click="translate">see translation</span>
-                                <span v-show="translated" class="point text-decoration-underline"
+                                <span v-show="translated" class="point text-decoration-underline text-secondary"
                                     @click="translated = !translated">see original</span>
                             </div>
                             <div class="d-flex align-items-center gap-3 point">
-                                <i title="share this page" @click="utilities.shareBlog(`##blog_page_title`,`##blog_page_url`)" class="bi bi-share-fill text-light text-neon"></i>
+                                <i title="share this page" @click="utilities.shareBlog(`##blog_page_title`,`##blog_page_url`)" class="bi bi-share-fill text-warning"></i>
                             </div>
                         </div>
                     </article>
