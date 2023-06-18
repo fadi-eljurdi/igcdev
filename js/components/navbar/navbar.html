@@ -16,6 +16,14 @@
       <a :href="utilities.env('/projects.html')">Projects</a>
       <a :href="utilities.env('/team.html')">Team</a>
       <a :href="utilities.env('/blogs')">Blogs</a>
+      <span data-bs-toggle="dropdown" class="point">Terms and Policies</span>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+        <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+        <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+        <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
+        <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
+      </ul>
       <a href="https://wa.me/+17167309932" class="btn btn-sm btn-info">Contact</a>
     </nav>
     <!-- <i class=" bi bi-three-dots-vertical text-neon fs-3" data-bs-toggle="dropdown"></i>
@@ -32,6 +40,13 @@
       <li><a :href="utilities.env('/projects.html')" class="dropdown-item">Projects</a></li>
       <li><a :href="utilities.env('/team.html')" class="dropdown-item">Team</a></li>
       <li><a :href="utilities.env('/blogs')" class="dropdown-item">Blogs</a></li>
+      
+      <li><a class="dropdown-item" :href="utilities.env('/terms.html')">Terms of use</a></li>
+      <li><a class="dropdown-item" :href="utilities.env('/disclaimer.html')">Disclaimer</a></li>
+      <li><a class="dropdown-item" :href="utilities.env('/privacy-policy.html')">Privacy policy</a></li>
+      <!-- <li><a class="dropdown-item" href="#">Cookies Policies</a></li> -->
+      <li><a class="dropdown-item" :href="utilities.env('/acceptable-use.html')">Acceptable use</a></li>
+      
       <li><a href="https://wa.me/+17167309932" class="dropdown-item btn btn-sm btn-info">Contact</a></li>
     </ul>
 </header>

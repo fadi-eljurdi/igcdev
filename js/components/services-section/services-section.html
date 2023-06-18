@@ -1,39 +1,8 @@
 <section class="container py-5" id="services">
-    <div class="row justify-content-between g-3">
-        <!-- <div class="col-12 col-lg-6">
-            <title-section title="Our Services">Driving Success Through Tailored Expertise: Empowering Your Media and Gaming Journey with Our Exceptional Services</title-section>
-            <div class="d-flex flex-column gap-3">
-                <div class="position-relative z-1 p-3 bg-glass rounded" data-aos="zoom-in-up" data-aos-duration="1000">
-                    <h5 class="text-neon pop"><i class="bi bi-check2"></i> General Content Development Consultancy and Management Services</h5>
-                    <p class="text-info text-justify font-monospace">We specialize in incubating media projects, offering content development consultancy and management services. We handle writers and talent, manage budgets, and ensure client satisfaction, enabling them to market ideas effectively and streamline development.</p>
-                </div>
-                <div class="position-relative z-1 p-3 bg-glass rounded" data-aos="zoom-in-up" data-aos-duration="1500">
-                    <h5 class="text-neon pop"><i class="bi bi-check2"></i> Gaming Design and Development Consultancy and Management Services</h5>
-                    <p class="text-info text-justify font-monospace">In addition to our general content development consultancy services, we also offer specialized gaming development consultancy and management. We collaborate with gaming artists, writers, designers, and developers, handling all aspects of the development process, to bring our clients' gaming visions to life.</p>
-                </div>
-                <div class="position-relative z-1 p-3 bg-glass rounded" data-aos="zoom-in-up" data-aos-duration="2000">
-                    <h5 class="text-neon pop"><i class="bi bi-check2"></i> Content and Gaming IP Delivery and Incubation Services</h5>
-                    <p class="text-info font-monospace">At IncuGameCon, we excel in project management for both general content and gaming development. We handle IP incubation and asset management, ensuring efficient documentation and protection. Our personalized services, trilingual consultants, and extensive network make us the top choice in the MENAT region.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
-            <div class="ratio ratio-1x1 animated">
-                <iframe class="img-fluid object-fit-cover neon-lg rounded" src="https://www.youtube.com/embed/mezDWHfYeEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div> -->
+    <div class="row justify-content-start g-3">
         <div class="col-12">
             <title-section title="Our Services">Driving Success Through Tailored Expertise: Empowering Your Media and Gaming Journey with Our Exceptional Services</title-section>
         </div>
-        <!-- <div class="col-12 col-lg-4">
-            <pot data-aos="flip-right" data-aos-duration="1000" src="https://image.lexica.art/md2/4eb8ae8d-b803-44aa-8097-155bdab93b9d" title="General Content Development Consultancy and Management Services">We specialize in incubating media projects, offering content development consultancy and management services. We handle writers and talent, manage budgets, and ensure client satisfaction, enabling them to market ideas effectively and streamline development.</pot>
-        </div>
-        <div class="col-12 col-lg-4">
-            <pot data-aos="flip-right" data-aos-duration="1000" title="Gaming Design and Development Consultancy and Management Services" src="https://image.lexica.art/md2/57d06863-1505-48ed-b0da-464ebab775a1">In addition to our general content development consultancy services, we also offer specialized gaming development consultancy and management. We collaborate with gaming artists, writers, designers, and developers, handling all aspects of the development process, to bring our clients' gaming visions to life.</pot>
-        </div>
-        <div class="col-12 col-lg-4">
-            <pot data-aos="flip-right" data-aos-duration="1000" title="Content and Gaming IP Delivery and Incubation Services" src="https://image.lexica.art/md2/9cb6b480-8a81-4250-8c1b-9578a772ed24">At IncuGameCon, we excel in project management for both general content and gaming development. We handle IP incubation and asset management, ensuring efficient documentation and protection. Our personalized services, trilingual consultants, and extensive network make us the top choice in the MENAT region.</pot>
-        </div> -->
         <div class="col-12 col-lg-4  position-relative z-1" data-aos="flip-right" data-aos-duration="1000" v-for="s in store.profile.services" :key="s">
             <a :href="s.url" class="no-decoration" :title="s.title">
                 <div class="p-3 pop d-flex flex-column gap-2 bg-dark rounded neon-hover">
