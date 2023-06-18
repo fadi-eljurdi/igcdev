@@ -41,6 +41,7 @@ body {
 }
 #translated > p{
     color: var(--bs-light) ;
+    line-height: 2;
 }
 
 #original > h1{
@@ -50,6 +51,7 @@ body {
 }
 #original > p{
     color: var(--bs-light);
+    line-height: 2;
 }
 
 .bungee{
