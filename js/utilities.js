@@ -68,6 +68,13 @@ function shareBlog(title, url) {
     }
 }
 
+
+function getYouTubeId(url) {
+    const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/\?v=)|youtu\.be\/)([^\s&]+)/;
+    const match = url.match(regex);    
+    return match ? match[1] : null;
+}
+
 export default {
     getPage,
     getDistinctValues,
@@ -75,5 +82,6 @@ export default {
     env,
     timo,
     fixClosingTags,
-    shareBlog
+    shareBlog,
+    getYouTubeId
 }

@@ -23,6 +23,14 @@
   <section v-if="spinner" class="w-100 h-100 position-fixed top-0 start-0 z-3 bg-glass d-flex justify-content-center align-items-center">
     <span class="spinner-grow spinner-grow-sm"></span>
   </section>
+  <!-- <section v-if="showVideo" class="overflow-x-hidden w-100 h-100 bg-glass position-fixed z-2 top-0 start-0 d-flex justify-content-center align-items-center">
+    <div class="showVideo">
+        <figure class="ratio ratio-16x9 shadow">
+            <iframe width="560" height="315" :src="'https://www.youtube-nocookie.com/embed/'+contact.video+'?rel=0'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </figure>
+        <button @click="showVideo = !showVideo" class="btn btn-sm btn-secondary">skip video</button>
+    </div>
+  </section> -->
   <navbar-section></navbar-section>
   <hero-section></hero-section>
   <main class="my-5">

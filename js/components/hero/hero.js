@@ -49,6 +49,12 @@ export default {
             }
         }
     },
+    computed:{
+        getYoutubeId(){
+            console.log(utilities.getYouTubeId(this.store.profile.contact.video));
+            return utilities.getYouTubeId(this.store.profile.contact.video)
+        }
+    },
     mounted(){
     }
 }

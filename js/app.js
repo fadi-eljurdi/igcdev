@@ -146,6 +146,7 @@ const app = Vue.createApp({
         }
     },
     mounted(){
+        
         AOS.init();
         this.getProfile()
         if(document.querySelector('html').lang == 'ar'){
