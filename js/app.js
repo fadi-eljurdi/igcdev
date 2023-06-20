@@ -161,6 +161,10 @@ const app = Vue.createApp({
                 document.getElementById('original').classList.add('pop')
             }
         }
+        document.addEventListener('scroll', e => {
+            console.log(window.scrollY);
+            document.querySelector('main').style.transform = `translateX(-${window.scrollY * 2.5}px);`
+        })
     }
 })
 

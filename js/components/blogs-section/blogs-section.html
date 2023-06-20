@@ -1,7 +1,7 @@
 <section class="container">
-    <div class="row">
+    <div class="row g-4">
         <div class="col-12">
-            <title-section title="Our Blogs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi!</title-section>
+            <title-section :title="store.profile.contact.bHeading">{{store.profile.contact.bTagline}}</title-section>
         </div>
         
         <!-- <div class="col-12 col-lg-4" data-aos="flip-right" data-aos-duration="1800">
@@ -17,6 +17,7 @@
             <swiper-container :init="blogsSwiper" id="blogsSwiper">
                 <div class="swiper-slide" v-for="b in store.profile.blogs" :key="b">
                     <blog :blog="b"></blog>
+                    <!-- <pot data="b"></pot> -->
                 </div>
             </swiper-container>
         </div>
